@@ -1,0 +1,40 @@
+.project-container{
+    margin:4rem 0;
+}
+.project-content{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap:3rem;
+    margin:3.5rem;
+}
+.project{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    border:2px solid #7c66e3;
+    border-radius:10px;
+}
+.project img:hover{
+    transform:translateY(2px);
+    transition: all 0.2s ease-in;
+}
+.project img{
+    padding:10px;
+    max-height:15rem;
+    max-width:40rem;
+    object-fit:contain;
+}
+.project-container h5{
+    font-size:1.5rem;
+    font-weight:600;
+    margin-bottom:3.5rem;
+}
+@media(max-width:768px){
+    .project img{
+        max-height:10rem;
+        max-width:30rem;
+        object-fit:contain;
+    }
+}
